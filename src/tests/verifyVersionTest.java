@@ -16,9 +16,11 @@ public class verifyVersionTest extends BaseTest
 	{
 		String loginTitle = ExcelData.getData(file_path, "Sheet1", 1, 2);
 		String eVersion = ExcelData.getData(file_path, "Sheet1", 1, 3);
+		
 		LoginPage lp=new LoginPage(driver);
 	    lp.verifyTheTitle(loginTitle);
 		String aVersion = lp.verifyVersion();
+		
 		Assert.assertEquals(aVersion, eVersion);
 		Reporter.log("version is matching:actual version is:"+aVersion,true);
 		
