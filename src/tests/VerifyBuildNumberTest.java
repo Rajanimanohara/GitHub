@@ -25,7 +25,7 @@ public class VerifyBuildNumberTest extends BaseTest
 		//Verify The Title
 		lp.verifyTheTitle(loginTitle);
 		
-		//Enter Un
+		//Enter Username
 		Reporter.log("user name is:"+user,true);
 		lp.enterUsername(user);
 		
