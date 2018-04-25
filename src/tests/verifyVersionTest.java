@@ -21,6 +21,10 @@ public class verifyVersionTest extends BaseTest
 	    lp.verifyTheTitle(loginTitle);
 		String aVersion = lp.verifyVersion();
 		
+		
+		
+		
+		
 		Assert.assertEquals(aVersion, eVersion);
 		Reporter.log("version is matching:actual version is:"+aVersion,true);
 		
