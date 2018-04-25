@@ -18,8 +18,6 @@ public class VerifyBuildNumberTest extends BaseTest
 		String pass = ExcelData.getData(file_path, "Sheet1", 1,1 );
 		String timeTrackTitle = ExcelData.getData(file_path, "ettp", 1, 0);
 		
-		
-		
 		LoginPage lp=new LoginPage(driver);
 		
 		EnterTimeTrackPage ep=new EnterTimeTrackPage(driver);
